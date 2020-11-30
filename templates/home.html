@@ -14,6 +14,7 @@
           <hr class="mt-0 mb-4">
             <ul>{% for post in all_posts_list %}
                 <li>{{ post.text }}</li>
+                <li><button class="btn-primary" datasrc=""> {{ post.text }}</button></li>
             {% endfor %}
             </ul>
         </div>
