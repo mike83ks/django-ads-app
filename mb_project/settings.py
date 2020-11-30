@@ -25,7 +25,7 @@ SECRET_KEY = '7yfn=wiluhjui)dud26so^*r$&s*18kmb^&-)g27edrwsk*i5k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'posts.apps.PostsConfig',
 ]
 
@@ -67,6 +68,8 @@ TEMPLATES = [
         },
     },
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 WSGI_APPLICATION = 'mb_project.wsgi.application'
 
